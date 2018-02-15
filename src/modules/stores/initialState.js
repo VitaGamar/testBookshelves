@@ -1,4 +1,7 @@
 export default {
-  bookshelves: {},
-  books: {}
+  router: {},
+  entities: {
+      bookshelves: {},
+      books: {}
+  }
 };
