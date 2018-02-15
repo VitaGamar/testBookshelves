@@ -7,7 +7,7 @@ const initialState = {
   count: 0,
   isIncrementing: false,
   isDecrementing: false
-}
+};
 
 export default (state = initialState, action) => {
   switch (action.type) {
@@ -15,7 +15,7 @@ export default (state = initialState, action) => {
       return {
         ...state,
         isIncrementing: true
-      }
+      };
 
     case INCREMENT:
       return {

@@ -16,6 +16,6 @@ const App = () => (
       <Route exact path="/books" component={BooksPage} />
     </main>
   </div>
-)
+);
 
 export default App
