@@ -14,8 +14,9 @@ export class BooksPage extends Component {
         const {books} =this.props;
         return (
             <div className="container">
+                Books
                 {
-                    books.map(book => <div>{book}</div>)
+                   // books.map(book => <div>{book}</div>)
                 }
             </div>
         );

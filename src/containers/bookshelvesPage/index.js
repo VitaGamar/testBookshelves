@@ -13,6 +13,7 @@ export class BookshelvesPage extends Component {
         const {bookshelves} =this.props;
         return (
             <div className="container">
+                Bookshelves
                 {
                     //bookshelves.map(bookshelf => <div>{bookshelf}</div>)
                 }
