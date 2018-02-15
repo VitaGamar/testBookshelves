@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {booksActions} from '../../actions';
 import { bindActionCreators } from 'redux';
-import {getBooks} from "./../../selectors/booksSelector";
+import {getBooks} from "../../modules/selectors/books";
 
 
 export class BooksPage extends Component {
