@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Link } from 'react-router-dom'
 import BookshelvesPage from './../bookshelvesPage'
 import BooksPage from './../booksPage'
-import About from '../about'
 
 const App = () => (
   <div>
