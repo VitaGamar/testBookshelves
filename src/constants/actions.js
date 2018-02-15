@@ -14,7 +14,7 @@ const HTTP_METHOD = {
 const createCRUDEvent = (entityName, httpMethod) => `@entities/${httpMethod}-${entityName}`;
 
 export const GET_BOOK = createCRUDEvent(ENTITY_NAME.BOOK, HTTP_METHOD.GET);
-export const GET_ALL_BOOKS = createCRUDEvent(ENTITY_NAME.BOOK, HTTP_METHOD.GET);
+export const DELETE_BOOK = createCRUDEvent(ENTITY_NAME.BOOK, HTTP_METHOD.GET);
 export const GET_ALL_BOOKS = createCRUDEvent(ENTITY_NAME.BOOK, HTTP_METHOD.GET);
 export const GET_ALL_BOOKS = createCRUDEvent(ENTITY_NAME.BOOK, HTTP_METHOD.GET);
 export const GET_ALL_BOOKS = createCRUDEvent(ENTITY_NAME.BOOK, HTTP_METHOD.GET);
