@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {booksActions} from '../../actions';
+import * as bookshelvesActions from '../../modules/actions/bookshelves';
 import { bindActionCreators } from 'redux';
-import {getBookshelves} from "../../modules/selectors/bookshelves";
+import { getBookshelves } from '../../modules/selectors/bookshelves';
+import List from '../../components/List/index';
 
 export class BookshelvesPage extends Component {
     constructor(props) {
@@ -10,13 +11,11 @@ export class BookshelvesPage extends Component {
     }
 
     render() {
-        const {bookshelves} =this.props;
+        const { bookshelves } = this.props;
+
         return (
             <div className="container">
-                Bookshelves
-                {
-                    //bookshelves.map(bookshelf => <div>{bookshelf}</div>)
-                }
+                <List items={bookshelves} />
             </div>
         );
     }
@@ -29,7 +28,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-    return { actions: bindActionCreators(booksActions, dispatch) };
+    return { actions: bindActionCreators(bookshelvesActions, dispatch) };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BookshelvesPage);
