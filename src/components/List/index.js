@@ -6,7 +6,7 @@ const List = ({ items }) => {
         <ListGroup>
             {items.map((item) => {
                 return (
-                    <ListGroupItem>
+                    <ListGroupItem key={item.id}>
                         {item.title}
                     </ListGroupItem>
                 );
