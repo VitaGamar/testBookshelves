@@ -1,7 +1,10 @@
 export default {
   router: {},
   entities: {
-      bookshelves: {},
+      bookshelves: {
+          ids: [],
+          data: {}
+      },
       books: {}
   }
 };

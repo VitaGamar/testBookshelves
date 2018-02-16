@@ -1,11 +1,10 @@
 import React from 'react'
 import { ListGroup, ListGroupItem } from 'react-bootstrap'
 
-const List = props => {
-
+const List = ({ items }) => {
     return (
         <ListGroup>
-            {props.items.map((item, index) => {
+            {items.map((item) => {
                 return (
                     <ListGroupItem>
                         {item.title}

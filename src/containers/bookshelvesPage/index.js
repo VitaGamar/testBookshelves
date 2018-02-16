@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as bookshelvesActions from '../../modules/actions/bookshelves';
 import { bindActionCreators } from 'redux';
-import { getBookshelves } from '../../modules/selectors/bookshelves';
-import List from '../../components/List/index';
+import {getBookshelvesList} from '../../modules/selectors/bookshelves';
+import List from '../../components/List';
 
 export class BookshelvesPage extends Component {
     constructor(props) {
         super(props);
+    }
+
+    componentDidMount() {
+        this.props.actions.loadBookshelves();
     }
 
     render() {
@@ -23,7 +27,7 @@ export class BookshelvesPage extends Component {
 
 function mapStateToProps(state) {
     return {
-        bookshelves: getBookshelves(state)
+        bookshelves: getBookshelvesList(state)
     };
 }
 
