@@ -1,7 +1,8 @@
 import * as actionType from '../../../constants/actions';
 import initialState from '../../stores/initialState'
+import { getBooks } from "../../selectors/books";
 
-const booksReducer = (state = initialState.bookshelves, action) => {
+const booksReducer = (state = getBooks(initialState), action) => {
     return state;
 };
 

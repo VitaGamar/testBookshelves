@@ -6,7 +6,7 @@ import store, { history } from './modules/stores'
 import App from './containers/app'
 
 import 'sanitize.css/sanitize.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/bootstrap.min.css'
 import './index.css'
 
 const target = document.querySelector('#root');
